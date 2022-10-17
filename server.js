@@ -8,6 +8,7 @@ const app = express();
 app.use(express.static('./dist/angular-app-heroku'));
 
 app.get('/*', (req, res) =>
+    console.log('server.js');
     res.sendFile('index.html', {root: 'dist/angular-app-heroku/'}),
 );
 
