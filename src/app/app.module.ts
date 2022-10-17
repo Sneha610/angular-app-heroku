@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {Http} from '@angular/common/http';
-import { HttpModule } from '@angular/common/http';
-//import { HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 
@@ -15,7 +14,9 @@ import { ContactsComponent } from './contacts/contacts.component';
     ContactsComponent,
   ],
   imports: [
-    BrowserModule, HttpModule, //HttpClientModule
+    BrowserModule, 
+    HttpClient, 
+    HttpClientModule,
     FormsModule
   ],
   providers: [],

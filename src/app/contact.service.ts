@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
-//import {Http, Headers} from '@angular/http';
-import {Http} from '@angular/common/http';
-import { HttpModule } from '@angular/common/http';
-//import { HttpClientModule } from '@angular/common/http';
+import { ttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import {Headers} from '@angular/common/http';
 
