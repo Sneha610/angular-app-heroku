@@ -1,0 +1,59 @@
+<div class="container">
+    <h2 class="page-header">Add Contact</h2>
+    <form (submit)="addContact()">
+        <div class="form-group">
+            <label>First Name</label>
+            <!-- in the below line, ngmodel is used for two way data binding, class="form-control" is used for neat view -->
+            <input type="text" [(ngModel)] = "first_name" name="first_name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Last Name</label>
+            <!-- in the below line, ngmodel is used for two way data binding, class="form-control" is used for neat view -->
+            <input type="text" [(ngModel)] = "last_name" name="last_name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Phone</label>
+            <!-- in the below line, ngmodel is used for two way data binding, class="form-control" is used for neat view -->
+            <input type="text" [(ngModel)] = "phone" name="phone" class="form-control" required>
+        </div>
+        <input type="submit" class="btn btn-success" value="Add">
+    </form>
+</div>
+<hr>
+
+
+
+<div class="container">
+    <div *ngFor = "let contact of contacts">
+        <div class="row">
+            <div class = "col-md-3">
+                {{contact.first_name}}
+            </div>
+            <div class = "col-md-3">
+                {{contact.last_name}}
+            </div>
+            <div class = "col-md-3">
+                {{contact.phone}}
+            </div>
+            <div class = "col-md-3">
+                <input type="button" (click) = "deleteContact(contact._id)" value="Delete" class="btn btn-danger">
+            </div>
+        </div>
+    </div>
+    <!-- <div>
+        <div class="row">
+            <div class = "col-md-3">
+                <input type="text" id="fname" name="fname">
+            </div>
+            <div class = "col-md-3">
+                <input type="text" id="lname" name="lname">
+            </div>
+            <div class = "col-md-3">
+                <input type="text" id="phone" name="phone">    
+            </div>
+            <div class = "col-md-3">
+                <input type="button" (click) = "addContact('A','B','1')" value="Add" class="btn btn-danger">
+            </div>   
+        </div>
+    </div> -->
+</div>
