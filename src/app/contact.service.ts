@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 //import {Http, Headers} from '@angular/http';
-import {Http} from '@angular/http';
-import { HttpModule } from '@angular/http';
+import {Http} from '@angular/common/http';
+import { HttpModule } from '@angular/common/http';
 //import { HttpClientModule } from '@angular/common/http';
 
-import {Headers} from '@angular/http';
+import {Headers} from '@angular/common/http';
 
 //didn't umderstand the below line
 import {Contact} from './contact';
