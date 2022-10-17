@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClient } from '@angular/common/http';
+//import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import {HttpHeaders} from '@angular/common/http';
+//import {HttpHeaders} from '@angular/common/http';
 
 
 import { AppComponent } from './app.component';
@@ -16,10 +16,10 @@ import { ContactsComponent } from './contacts/contacts.component';
   ],
   imports: [
     BrowserModule, 
-    HttpClient, 
+    //HttpClient, 
     HttpClientModule,
     FormsModule,
-    HttpHeaders
+    //HttpHeaders
   ],
   providers: [],
   bootstrap: [AppComponent]
