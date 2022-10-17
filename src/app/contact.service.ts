@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-//import { HttpClient } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 
-//import {HttpHeaders} from '@angular/common/http';
+import {HttpHeaders} from '@angular/common/http';
 
 //didn't umderstand the below line
 import {Contact} from './contact';
@@ -15,7 +15,7 @@ import { map } from 'rxjs/operators';
 })
 export class ContactService {
 
-  constructor(private http: Http) { }
+  constructor(private http: HttpClient) { }
 
   //retrieving contacts
   getContacts()
