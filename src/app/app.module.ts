@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {Http} from '@angular/http';
-import { HttpModule } from '@angular/http';
+import {Http} from '@angular/common/http';
+import { HttpModule } from '@angular/common/http';
 //import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
