@@ -21,7 +21,7 @@ export class ContactService {
   getContacts()
   {
     console.log("inside getContacts()");
-    return this.http.get('https://shielded-springs-97731.herokuapp.com/api/contacts')
+    return this.http.get('https://shielded-springs-97731.herokuapp.com/view')
       .pipe(map((response: any) => response.json()));   //initially .map(res => res.json());
   }
 
@@ -29,7 +29,7 @@ export class ContactService {
   {
     var headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    return this.http.post('https://shielded-springs-97731.herokuapp.com/api/contacts', newContact, {headers: new HttpHeaders})
+    return this.http.post('https://shielded-springs-97731.herokuapp.com/api/contacts', newContact, {headers: HttpHeaders})
       .pipe(map((response: any) => response.json()));
 
   }
