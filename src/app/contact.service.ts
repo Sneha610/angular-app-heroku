@@ -29,7 +29,7 @@ export class ContactService {
   {
     var headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    return this.http.post('https://shielded-springs-97731.herokuapp.com/api/contacts', newContact, {headers: HttpHeaders})
+    return this.http.post('https://shielded-springs-97731.herokuapp.com/view', newContact, {headers: HttpHeaders})
       .pipe(map((response: any) => response.json()));
 
   }
