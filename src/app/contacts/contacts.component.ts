@@ -17,7 +17,7 @@ export class ContactsComponent implements OnInit {
 
   contacts : Contact[];
   //din't understand the below line
-  contact: Contact;
+  contact : Contact;
 
   first_name:string;
   last_name: string;
