@@ -23,6 +23,7 @@ export class ContactService {
     console.log("inside getContacts()");
     return this.http.get('https://shielded-springs-97731.herokuapp.com/api/contacts')
       .pipe(map((response: any) => response.json()));   //initially .map(res => res.json());
+    console.log("end getContacts()");
   }
 
   addContact(newContact:Contact)
